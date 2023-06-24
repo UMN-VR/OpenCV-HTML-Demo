@@ -7,3 +7,4 @@ https://htmlpreview.github.io/?https://github.com/UMN-VR/OpenCV-HTML-Demo/blob/m
 https://htmlpreview.github.io/?https://github.com/UMN-VR/OpenCV-HTML-Demo/blob/main/syn01_result.html
 https://htmlpreview.github.io/?https://github.com/UMN-VR/OpenCV-HTML-Demo/blob/main/syn02_result.html
 https://htmlpreview.github.io/?https://github.com/UMN-VR/OpenCV-HTML-Demo/blob/main/syn03_result.html
+https://htmlpreview.github.io/?https://github.com/UMN-VR/OpenCV-HTML-Demo/blob/main/syn04_result.html
