@@ -1,18 +1,18 @@
 # image_processing.py
 
-import cv2
-import json
-import numpy as np
+import cv2    #Import OpenCV so we can use Computer Vision
+import json    #Import JSON so we can use JSON object Format
+import numpy as np    #Import numpy so we can do matrix math and treat the image as a pixel value matrix
 
-def load_image(file_name):
-    image = cv2.imread(file_name)
-    if image is None:
+def load_image(file_name):    #Create a new function called "load image" that takes in an image file (from file name give as parameter) and turns it into a pixel value matrix
+    image = cv2.imread(file_name)    #Read in image as matrix of color values!
+    if image is None:    #If the image matrix is empty, print out an error
         print(f"Unable to open image file: {file_name}")
-    return image
+    return image    #return image pixel matrix!
 
-def process_image(image, objects_data):
-    hsv = cv2.cvtColor(image, cv2.COLOR_BGR2HSV)
-    lower_red = np.array([0, 100, 100])
+def process_image(image, objects_data):    #Create a new function called "process image." Take in two parameters, the image array parameter and a json object for results
+    hsv = cv2.cvtColor(image, cv2.COLOR_BGR2HSV)     #Convert color encoding of image matrix 
+    lower_red = np.array([0, 100, 100])    #Create an single pixle array. This 
     upper_red = np.array([10, 255, 255])
     mask = cv2.inRange(hsv, lower_red, upper_red)
     contours, _ = cv2.findContours(mask, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
