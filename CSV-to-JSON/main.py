@@ -34,7 +34,7 @@ with open(csv_filename, 'r') as csv_file:
         entry = {
             'x': float(row['x']),
             'y': float(row['y']),
-            'diameter': float(row['diameter']),
+            'di'ameter: float(row['diameter']),
             'perimeter': float(row['perimeter']),
             'eccentricity': float(row['eccentricity'])
         }

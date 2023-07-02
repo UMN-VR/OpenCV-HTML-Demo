@@ -7,8 +7,8 @@ import os
 path = "OpenCV-HTML/plot-JSON-crop/"
 
 def generate_flow_fields(json_file):
-    filename = path + os.path.basename(json_file)
-    logger = NoduleAnalysisLogger("nodule_analysis.log", filename).get_logger()
+    os.makedirs(path, exist_ok=True)  # Ensure the directory exists
+    logger = NoduleAnalysisLogger("nodule_analysis.log", path).get_logger()
     logger.info('Loading data from json file.')
     nodule_info = load_data(json_file)
 
